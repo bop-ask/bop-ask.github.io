@@ -196,10 +196,10 @@
             <h1 class="title is-1 publication-title">BOP-ASK: Object-Interaction Reasoning for Vision-Language Models</h1>
             <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <a href="https://vineet2104.github.io/" target="_blank">Vineet Bhat</a><sup>1*</sup>,
+                  <a href="https://vineet2104.github.io/" target="_blank">Vineet Bhat</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Sungsu Kim</a><sup>1*</sup>,
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Sungsu Kim</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
                   <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Valts Blukis</a><sup>2</sup>,
@@ -224,10 +224,10 @@
                 </span>
             </div>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup> New York University</span><br>
-                    <span class="author-block"><sup>2</sup> NVIDIA</span><br>
-              
+                    <span class="author-block"><sup>1</sup> New York University&nbsp;&nbsp;&nbsp;</span>
+                    <span class="author-block"><sup>2</sup> NVIDIA</span>
                   </div>
+
 
 
                   <div class="column has-text-centered">
@@ -280,102 +280,75 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Key findings -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Key Findings</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/figure1_nvidia_bop-ask.png" alt="BOP-ASK Motivation" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Reliable robot manipulation requires more than detecting objects—it requires understanding how objects interact in space. BOP-ASK directly addresses this need by offering detailed supervision for physical relationships, grasping cues, precise poses, and object-to-object motion planning, enabling models to learn manipulation skills that match human spatial intuition.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/vineet5.jpg" alt="BOP-ASK contents" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          We automatically derive object-interaction and spatial reasoning annotations from 3D point clouds, images, object poses, and 3D models. BOP-ASK includes question–answer pairs spanning six tasks: pose estimation, grasp affordance, motion planning, physical interaction, object relationships, and depth relationships.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/bopask-core-benchmark.png" alt="BOP-ASK-core Benchmark" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         We evaluate a wide range of proprietary and open-source VLMs on BOP-ASK and observe substantial shortcomings in object-interaction reasoning. Models trained on BOP-ASK (last three rows) exhibit strong skill transfer and robust reasoning in unseen scenes.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+<!-- End key findings -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
+<!-- Dataset details -->  
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Dataset Details</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/bopask-qual-comparisons.png" alt="BOP-ASK qualitative evaluations" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Reliable robot manipulation requires more than detecting objects—it requires understanding how objects interact in space. BOP-ASK directly addresses this need by offering detailed supervision for physical relationships, grasping cues, precise poses, and object-to-object motion planning, enabling models to learn manipulation skills that match human spatial intuition.
+        </h2>
       </div>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vineet5.jpg" alt="BOP-ASK contents" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          We automatically derive object-interaction and spatial reasoning annotations from 3D point clouds, images, object poses, and 3D models. BOP-ASK includes question–answer pairs spanning six tasks: pose estimation, grasp affordance, motion planning, physical interaction, object relationships, and depth relationships.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/bopask-core-benchmark.png" alt="BOP-ASK-core Benchmark" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+         We evaluate a wide range of proprietary and open-source VLMs on BOP-ASK and observe substantial shortcomings in object-interaction reasoning. Models trained on BOP-ASK (last three rows) exhibit strong skill transfer and robust reasoning in unseen scenes.
+       </h2>
+     </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End video carousel -->
+<!-- End dataset details -->
+
+
 
 
 
